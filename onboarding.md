@@ -182,10 +182,10 @@ curl --location 'http://localhost:8086/api/v1/service/portfolio' \
 
 | Parameter   | Type   | Description                                     |
 |-------------|--------|-------------------------------------------------|
-| `id`        | String | Unique ID of the user.                         |
+| `id`        | String | Artist/Studio ID .                              |
 | `role`      | String | Selected role (`ARTIST` or `STUDIO`).           |
-| `email`     | String | Email address of the user.                     |
-| `imageUrl`  | File   | One or more portfolio images to be uploaded.   |
+| `email`     | String | Email address of the user.                      |
+| `imageUrl`  | File   | One or more portfolio images to be uploaded.    |
 
 
 
