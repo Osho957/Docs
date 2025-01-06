@@ -103,7 +103,7 @@ curl --location 'http://localhost:8086/api/v1/service/about' \
 --form 'email="citadah995@gholar.com"' \
 --form 'description="Your description here"' \
 --form 'file=@"/Users/oshorajneesh/Downloads/IMG_9375.JPG"'
-`
+```
 
 ## Step 6: Assign Service
 Users can assign services by providing the necessary details.
