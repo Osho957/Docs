@@ -87,11 +87,16 @@ Cookie: JSESSIONID=5B9FE3B232BEE44BADA16B8D134D1F0E
 
 ---
 
-## Step 5: About My Self Details
+## Step 5: About Myself Details
 Users can provide additional details about themselves along with an optional file upload.
+
 ### API Endpoint
 **Method:** `POST`  
-**curl:** `curl --location 'http://localhost:8086/api/v1/service/about' \
+**URL:** `http://localhost:8086/api/v1/service/about`
+
+### Request Example
+```bash
+curl --location 'http://localhost:8086/api/v1/service/about' \
 --header 'Cookie: JSESSIONID=2AD4D1F2162C038285778F0D77515589' \
 --form 'id="e16a9ec5-7516-483b-949c-d3bc65d6bb2e"' \
 --form 'role="ARTIST"' \
@@ -118,14 +123,3 @@ curl --location 'http://localhost:8086/api/v1/service/assign_service' \
   "role": "ARTIST",
   "email": "citadah995@gholar.com"
 }'
-
-
-
-
-
-
-
-
-
-
-
