@@ -100,6 +100,32 @@ Users can provide additional details about themselves along with an optional fil
 --form 'file=@"/Users/oshorajneesh/Downloads/IMG_9375.JPG"'
 `
 
+## Step 6: Assign Service
+Users can assign services by providing the necessary details.
+
+### API Endpoint
+**Method:** `POST`  
+**URL:** `http://localhost:8086/api/v1/service/assign_service`
+
+### Request Example
+```bash
+curl --location 'http://localhost:8086/api/v1/service/assign_service' \
+--header 'Content-Type: application/json' \
+--header 'Cookie: JSESSIONID=012EF5AC6F41FBABC85EF16E79BB17DF' \
+--data-raw '{
+  "id": "e16a9ec5-7516-483b-949c-d3bc65d6bb2e",
+  "serviceIdList": ["bdf396b0-10fd-4d39-8230-82bb9b34a8a0", "61c3f20f-0a8f-461c-bee8-7e7119bf5ff9"],
+  "role": "ARTIST",
+  "email": "citadah995@gholar.com"
+}'
+
+
+
+
+
+
+
+
 
 
 
