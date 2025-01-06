@@ -105,6 +105,16 @@ curl --location 'http://localhost:8086/api/v1/service/about' \
 --form 'file=@"/Users/oshorajneesh/Downloads/IMG_9375.JPG"'
 ```
 
+| Parameter      | Type   | Description                                   |
+|----------------|--------|-----------------------------------------------|
+| `id`           | String | Artist/studio ID.                             |
+| `role`         | String | Selected role (`ARTIST` or `STUDIO`).         |
+| `email`        | String | Email address of the user.                    |
+| `description`  | String | A brief description about the user.           |
+| `file`         | File   | Optional file upload (e.g., profile image).   |
+
+
+
 ## Step 6: Assign Service
 Users can assign services by providing the necessary details.
 
