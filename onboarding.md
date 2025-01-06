@@ -123,3 +123,70 @@ curl --location 'http://localhost:8086/api/v1/service/assign_service' \
   "role": "ARTIST",
   "email": "citadah995@gholar.com"
 }'
+```
+
+| Parameter         | Type     | Description                                  |
+|-------------------|----------|----------------------------------------------|
+| `id`              | String   | Artist/Studio ID .                           |
+| `serviceIdList`   | Array    | List of service IDs to be assigned.          |
+| `role`            | String   | Selected role (`ARTIST` or `STUDIO`).        |
+| `email`           | String   | Email address of the user.                   |
+
+
+## Step 7: Assign Style
+Users can assign styles by providing the necessary details.
+
+### API Endpoint
+**Method:** `POST`  
+**URL:** `http://localhost:8086/api/v1/service/assign_style`
+
+### Request Example
+```bash
+curl --location 'http://localhost:8086/api/v1/service/assign_style' \
+--header 'Content-Type: application/json' \
+--header 'Cookie: JSESSIONID=012EF5AC6F41FBABC85EF16E79BB17DF' \
+--data-raw '{
+  "id": "e16a9ec5-7516-483b-949c-d3bc65d6bb2e",
+  "serviceIdList": ["bdf396b0-10fd-4d39-8230-82bb9b34a8a0", "61c3f20f-0a8f-461c-bee8-7e7119bf5ff9"],
+  "role": "ARTIST",
+  "email": "citadah995@gholar.com"
+}'
+```
+
+| Parameter         | Type     | Description                                  |
+|-------------------|----------|----------------------------------------------|
+| `id`              | String   | Artist/Studio ID .                           |
+| `serviceIdList`   | Array    | List of service IDs to be assigned.          |
+| `role`            | String   | Selected role (`ARTIST` or `STUDIO`).        |
+| `email`           | String   | Email address of the user.                   |
+
+
+
+## Step 8: Upload Portfolio
+Users can upload portfolio images by providing the necessary details.
+
+### API Endpoint
+**Method:** `POST`  
+**URL:** `http://localhost:8086/api/v1/service/portfolio`
+
+### Request Example
+```bash
+curl --location 'http://localhost:8086/api/v1/service/portfolio' \
+--header 'Cookie: JSESSIONID=2AD4D1F2162C038285778F0D77515589' \
+--form 'id="e16a9ec5-7516-483b-949c-d3bc65d6bb2e"' \
+--form 'role="ARTIST"' \
+--form 'email="citadah995@gholar.com"' \
+--form 'imageUrl=@"/Users/oshorajneesh/Downloads/IMG_9375.JPG"' \
+--form 'imageUrl=@"/Users/oshorajneesh/Downloads/IMG_9375.JPG"'
+```
+
+| Parameter   | Type   | Description                                     |
+|-------------|--------|-------------------------------------------------|
+| `id`        | String | Unique ID of the user.                         |
+| `role`      | String | Selected role (`ARTIST` or `STUDIO`).           |
+| `email`     | String | Email address of the user.                     |
+| `imageUrl`  | File   | One or more portfolio images to be uploaded.   |
+
+
+
+
